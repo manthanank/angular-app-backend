@@ -24,10 +24,10 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     var emp = new Users({
-        name: req.body.name,
-        position: req.body.position,
-        office: req.body.office,
-        salary: req.body.salary,
+        fistName: req.body.fistName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        password: req.body.password,
     });
     emp.save((err, doc) => {
         if (!err) { res.send(doc); }
