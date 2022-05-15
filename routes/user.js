@@ -15,4 +15,10 @@ router.get('/authenticate', (req, res, next) => {
 router.get('/profile', (req, res, next) => {
   res.send('Profile');
 });
+
+// Validate
+router.get('/validate', (req, res, next) => {
+  res.send('Validate');
+});
+
 module.exports = router;
